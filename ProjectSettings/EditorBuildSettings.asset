@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Command Pattern/Scenes/MainMenu.unity
     guid: 2efa183a405d34a4ebe5e74a7f10e389
+  - enabled: 1
+    path: Assets/Command Pattern/Scenes/Lose.unity
+    guid: 2acfc18e1d67b2046b034ac5149ac79c
   m_configObjects: {}

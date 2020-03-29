@@ -7,10 +7,16 @@ public class GameManager : MonoBehaviour
 {
 	public bool checkpointHit;
 	public bool finishHit;
+	public float timeLeft = 20;
 
 	private void Update()
 	{
-		if (checkpointHit == true && finishHit == true)
+		timeLeft -= Time.deltaTime;
+		if (timeLeft < 0)
+		{
+			SceneManager.LoadScene("Lose");
+		}
+		else if (checkpointHit == true && finishHit == true)
 		{
 			SceneManager.LoadScene("Win");
 		}
